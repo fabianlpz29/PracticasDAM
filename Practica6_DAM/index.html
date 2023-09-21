@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Practica6_DAM</title>
+</head>
+<body>
+    <!-- EJERCICIO 1 -->
+
+    <div class="container mt-4">
+        <h1>Galería de Imágenes</h1>
+        <form id="imageForm">
+            <div class="form-group">
+                <label for="imageURL">URL o ruta de la imagen:</label>
+                <input type="text" class="form-control" id="imageURL" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Agregar Imagen</button>
+                <button type="button" class="btn btn-danger" id="removeImage">Quitar Imagen</button>
+            </div>
+        </form>
+        <hr>
+        <div id="imageGallery" class="row">
+            <!-- Aquí se mostrarán las imágenes agregadas -->
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>

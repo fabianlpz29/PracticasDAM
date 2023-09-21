@@ -1,0 +1,17 @@
+/* Estilos CSS personalizados */
+/* Puedes personalizar los estilos según tus preferencias */
+
+/* Cambiar el fondo del cuerpo de la página */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Centrar el formulario y la galería */
+.container {
+    text-align: center;
+}
+
+/* Espacio entre las imágenes en la galería */
+.img-fluid {
+    margin-bottom: 10px;
+}
