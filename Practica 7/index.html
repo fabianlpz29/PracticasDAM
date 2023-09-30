@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody id="filas-content"></tbody>
+    </table>
+
+    <form id="agregar-producto">
+        <input type="text" name="id" placeholder="Id">
+        <input type="text" name="name" placeholder="Nombre">
+        <input type="text" name="price" placeholder="Precio">
+        <input type="text" name="quantity" placeholder="Cantidad">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <template id="detalle-precios">
+        <tr>
+            <td colspan="2">Total</td>
+            <td class="price-total"></td>
+        </tr>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+</html>
