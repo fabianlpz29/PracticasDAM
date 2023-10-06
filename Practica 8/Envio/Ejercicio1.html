@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio</title>
+</head>
+<body>
+    <form action="" id="formulario">
+        <input type="text" id="nombre">
+        <input type="email" id="correo">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const formulario = document.getElementById("formulario")
+
+        formulario.addEventListener("submit", function(event){
+            event.preventDefault() //evita que el formulario se envie de inmediato
+
+            const nombre = document.getElementById("nombre")
+            const correo = document.getElementById("correo")
+
+            if(nombre.value == "" || correo.value == ""){
+                alert("Porfavor ingresar todos los datos")
+            }else{
+                alert("El formulario se envio correctamente")
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <button id="boton">Haz click para aumentar el contador</button>
+    <p id="contador">Clicks : 0</p>
+
+    <script>
+        const boton = document.getElementById("boton")
+        const contador = document.getElementById("contador")
+        let conteo = 0
+
+        boton.addEventListener("click", function() {
+            conteo ++
+            contador.textContent = `Clicks: ${conteo}`
+        })
+    </script>
+</body>
+</html>

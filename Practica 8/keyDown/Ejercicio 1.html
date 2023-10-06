@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+        <input type="text" id="miInput" placeholder="Presiona Enter para agregar un elemento">
+        <ul id="miLista"></ul>
+
+        <script>
+            const miInput = document.getElementById("miInput")
+            const miLista = document.getElementById("miLista")
+
+            miInput.addEventListener("keydown", function(event) {
+                if(event.keyCode === 13){
+                    const nuevoElemento = document.createElement("li")
+                    nuevoElemento.textContent = `Elemento ${miLista.children.length + 1}`
+                    miLista.appendChild(nuevoElemento)
+                    miInput.value = ""
+                }
+            })
+        </script>
+</body>
+</html>
